@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+			<!-- Optional theme -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!--Fim Bootstrap-->
+		
+        <title>Consultas Doctor</title>
+    </head>
+    <body>
+        <div class="container">
+		<div class="row">
+			<div class="col-md-12"> <br/>
+				<p class="text-center">
+				<img src="img/logo.PNG" alt="Logo Consulta" class="img-circle"> 
+				</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<form>
+			  <div class="form-group col-md-8 text-center">
+				<input type="search" class="form-control" id="buscar" placeholder="Clique aqui para buscar exames e consultas">
+			  </div>
+			</form>  
+		</div>
+		
+		
+		<div class="row">
+			<form method="post" action="consulta.html">
+				<div class="col-md-8">
+				<center>
+					<select class="form-control">
+							<option value="">Escolha Convencio</option>
+							<option value="hapvida">Hapvida</option>
+							<option value="unimed">Unimed</option>
+							<option value="brasdescoSaude">Bradesco Saude</option>
+							<option value="amazoniaSaude">Amazonia Saude</option>
+							<option value="outros">Outros</option>
+							<option value="todos">Todos</option>
+					</select>
+				</center>	
+				</div>
+			</form>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-4 center">
+			<center>
+				<a href="consulta.html"><button class="btn btn-success btn-lg" type="submit">Buscar Consulta / Exame</button></a> 
+			</center>	
+			</div>
+		</div>
+	</div>
+		
+		
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
